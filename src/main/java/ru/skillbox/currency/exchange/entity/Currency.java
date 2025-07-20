@@ -19,16 +19,22 @@ public class Currency {
     @Column(name = "id")
     private Long id;
 
+    @Column(name = "valute_id")
+    private String valuteId;
+
     @Column(name = "name")
     private String name;
 
     @Column(name = "nominal")
-    private Long nominal;
+    private int nominal;
 
-    @Column(name = "value")
+    @Column(name = "value", columnDefinition = "NUMERIC(19,5)")
     private Double value;
 
     @Column(name = "iso_num_code")
-    private Long isoNumCode;
+    private String isoNumCode;
+
+    @Column(name = "iso_char_code")
+    private String isoCharCode;
 
 }

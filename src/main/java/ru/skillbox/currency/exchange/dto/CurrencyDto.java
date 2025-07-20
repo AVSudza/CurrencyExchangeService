@@ -12,11 +12,25 @@ import lombok.Setter;
 public class CurrencyDto {
     private Long id;
 
+    private String valuteId;
+
     private String name;
 
-    private Long nominal;
+    private int nominal;
 
     private Double value;
 
-    private Long isoNumCode;
+    private String isoNumCode;
+
+    private String isoCharCode;
+
+    @Override
+    public String toString() {
+        return "id: " + id +
+                ", name: " + name +
+                ", nominal: " + nominal +
+                ", value: " + value +
+                ", isoNumCode: " + isoNumCode +
+                ", isoLetterCode: " + isoCharCode;
+    }
 }

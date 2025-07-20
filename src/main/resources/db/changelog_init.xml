@@ -8,4 +8,8 @@
     <include file="classpath:db/changelog/create-sequence.xml"/>
     <include file="classpath:db/changelog/create-currency-table.xml"/>
     <include file="classpath:db/changelog/insert-currency.xml"/>
+    <include file="classpath:db/changelog/add_column-iso_char_cod-currency.xml"/>
+    <include file="classpath:db/changelog/add-auto-increment.xml"/>
+    <include file="classpath:db/changelog/add_column-valute_id-currency.xml"/>
+    <include file="classpath:db/changelog/delete-test_data-currency.xml"/>
 </databaseChangeLog>

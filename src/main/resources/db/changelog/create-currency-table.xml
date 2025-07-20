@@ -10,9 +10,9 @@
                 <constraints primaryKey="true" nullable="false"/>
             </column>
             <column name="name" type="varchar(255)"/>
-            <column name="nominal" type="bigint"/>
+            <column name="nominal" type="int"/>
             <column name="value" type="numeric(19,5)"/>
-            <column name="iso_num_code" type="bigint"/>
+            <column name="iso_num_code" type="varchar(3)"/>
         </createTable>
     </changeSet>
 

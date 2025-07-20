@@ -1,10 +1,10 @@
 server:
-  port: 8080
+  port: 8082
 
 spring:
   liquibase:
     enabled: true
-    drop-first: true
+    drop-first: false
     default-schema: public
     change-log: classpath:db/changelog_init.xml
 
@@ -19,5 +19,12 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQL95Dialect
         show_sql: true
         hbm2ddl:
-          auto: none
+          auto: validate
 
+source-currencies:
+  cbr:
+    api:
+      get-currencies: https://cbr.ru/scripts/XML_daily.asp
+  cbr-xml-daily:
+    api:
+      get-currencies: https://www.cbr-xml-daily.ru/daily_utf8.xml

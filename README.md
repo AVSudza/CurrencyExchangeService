@@ -30,7 +30,7 @@
 ### Запуск контейнера с базой данных
 
 ```bash
-docker run -p 5432:5432 --name postgres -e POSTGRES_PASSWORD=postgres -d postgres
+docker run -p 5432:5432 --name postgres_exchange -e POSTGRES_PASSWORD=postgres -d postgres
 ```
 
 Пользователь для подключения к контейнеру `postgres`.
